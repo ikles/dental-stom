@@ -1,0 +1,87 @@
+.eqbanner {
+  background: url("../images/eqbanner-bg.jpg") no-repeat bottom -70px center;
+  background-size: cover; }
+
+.eqbanner__row {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 69px; }
+
+.eqbanner__left {
+  width: 45%; }
+
+.eqbanner__subtit {
+  font-weight: 300;
+  font-size: 40px;
+  margin-bottom: 9px; }
+
+.eqbanner__title {
+  font-weight: 800;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 25px; }
+
+.eqbanner__text {
+  font-size: 17px;
+  line-height: 1.6; }
+
+.eqbanner__prices {
+  margin-top: 16px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.eqbanner__actions {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 10px; }
+
+.eqbanner__availability {
+  font-size: 17px;
+  color: #01d924;
+  display: inline-block;
+  margin-left: 39px; }
+
+.eqbanner__call-doctor {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #01b8d9;
+  margin-left: 40px; }
+
+.eqbanner__info {
+  margin-top: 33px; }
+
+.eqbanner__logos {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
+.eqbanner__logo:not(:last-child) {
+  margin-right: 30px; }
+
+.eqchars {
+  padding-top: 66px;
+  padding-bottom: 66px; }
+
+.eqchars__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  margin-bottom: 10px; }

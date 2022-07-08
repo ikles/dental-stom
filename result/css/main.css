@@ -1,5 +1,6 @@
 .sproduct-wrapper {
-  padding-top: 0px; }
+  padding-top: 0px;
+  padding-bottom: 0; }
 
 .sproduct__main {
   background: white;
@@ -57,7 +58,7 @@
   margin-top: 30px; }
 
 .scard__left {
-  width: 45%;
+  width: 50.5%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
@@ -151,7 +152,7 @@
         -ms-flex-positive: 1;
             flex-grow: 1; }
   .scard__tbl-col .dots {
-    background: url("../img/dot-td.svg") repeat-x left bottom 6px; }
+    background: url("../images/dot-td.svg") repeat-x left bottom 6px; }
     .scard__tbl-col .dots span {
       background: #fff;
       padding-right: 5px; }
@@ -167,7 +168,7 @@
   font-weight: 600;
   font-size: 17px;
   line-height: 1.8;
-  background-image: url("../img/garant-i.svg");
+  background-image: url("../images/garant-i.svg");
   background-repeat: no-repeat;
   background-position: left center; }
 
@@ -240,6 +241,8 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 44px;
+  margin-top: 80px;
   margin-bottom: 44px; }
 
 .excldiller__left {
@@ -253,102 +256,171 @@
   padding-left: 89px; }
 
 .excldiller__title {
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 1.2;
-  color: black; }
+  margin-bottom: 0; }
 
 .spn {
   color: #01b8d9;
   line-height: 1.2; }
 
-/*page 2*/
-.eqbanner {
-  background: url("../img/eqbanner-bg.jpg") no-repeat bottom -70px center;
-  background-size: cover; }
-
-.eqbanner__row {
-  position: relative;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 69px; }
-
-.eqbanner__left {
-  width: 45%; }
-
-.eqbanner__subtit {
-  font-weight: 300;
-  font-size: 40px;
-  margin-bottom: 9px; }
-
-.eqbanner__title {
-  font-weight: 800;
-  font-size: 40px;
-  margin-top: 0px;
-  margin-bottom: 25px; }
-
-.eqbanner__text {
-  font-size: 17px;
-  line-height: 1.6; }
-
-.eqbanner__prices {
-  margin-top: 16px;
+.sadvantages {
+  background-image: url("../images/pin-bg-2.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  padding: 85px 446px 77px 59px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-.eqbanner__actions {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-top: 10px; }
+.sadvantages__left {
+  width: 50%; }
 
-.eqbanner__availability {
-  font-size: 17px;
-  color: #01d924;
-  display: inline-block;
-  margin-left: 39px; }
-
-.eqbanner__call-doctor {
-  display: inline-block;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.4;
-  color: #01b8d9;
-  margin-left: 40px; }
-
-.eqbanner__info {
-  margin-top: 33px; }
-
-.eqbanner__logos {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
-
-.eqbanner__logo:not(:last-child) {
-  margin-right: 30px; }
-
-.eqchars {
-  padding-top: 66px;
-  padding-bottom: 66px; }
-
-.eqchars__title {
-  font-weight: 600;
+.sadvantages__subtitle {
+  font-weight: 800;
   font-size: 30px;
+  line-height: 1.2;
+  color: black;
+  margin-bottom: 14px; }
+
+.sadvantages__right {
+  width: 50%;
+  padding-left: 89px; }
+
+.bio {
+  background: #f6f7fb;
+  padding-top: 81px;
+  padding-bottom: 84px; }
+
+.bio__row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.bio__left {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+
+.bio__right {
+  width: 50%;
+  padding-left: 89px;
+  padding-top: 32px; }
+
+.bio__title {
+  margin-bottom: 15px; }
+
+.bio__list li {
+  font-size: 24px;
+  padding-left: 19px; }
+
+.sla {
+  padding-top: 70px;
+  padding-bottom: 94px;
+  background-color: #FFF; }
+
+.sla__left {
+  width: 50%; }
+
+.sla__img-w {
+  height: 229px;
+  overflow: hidden; }
+
+.sla__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.sla__item-txt {
+  margin-top: 35px;
+  font-size: 24px;
   line-height: 1.6;
+  color: black; }
+
+.fbd {
+  padding-bottom: 51px;
+  background-color: #FFF; }
+
+.schars {
+  border-bottom: 1px solid #edf0f9;
+  border-top: 1px solid #edf0f9;
+  padding-top: 72px;
+  padding-bottom: 73px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+.schars__title {
+  margin-bottom: 52px; }
+
+.schars__tbl {
+  margin-bottom: 15px; }
+
+.schars__tbl-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 10px; }
 
-/*end page 2*/
+.schars__tbl-col {
+  font-size: 17px;
+  color: #999999; }
+
+.schars__text {
+  font-size: 17px;
+  line-height: 1.8; }
+
+.squestions {
+  background: #f6f7fb;
+  padding: 63px 121px 95px 80px; }
+
+.squestions__title.h2 {
+  margin-bottom: 27px; }
+
+.squestions__subtitle {
+  margin-bottom: 39px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+  color: black; }
+
+.squestions__form-row {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px; }
+
+.squestions__input {
+  background: white;
+  font-size: 17px;
+  padding-left: 30px;
+  padding-right: 30px; }
+  .squestions__input::placholder {
+    color: #999999; }
+
+.squestions__textarea {
+  width: 100%;
+  background-color: #FFF;
+  height: 120px;
+  font-size: 17px;
+  padding: 30px; }
+  .squestions__textarea::placholder {
+    color: #999999; }
+
+.squestions__btn {
+  margin-top: 30px; }

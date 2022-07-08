@@ -1,5 +1,22 @@
+@charset "UTF-8";
+
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
 .eqbanner {
-  background: url("../img/eqbanner-bg.jpg") $nr bottom -70px center;  
+  background: url("../images/eqbanner-bg.jpg") $nr bottom -70px center;  
           background-size: cover;
 }
 
