@@ -234,6 +234,34 @@
   display: inline-block;
   margin-top: 10px; }
 
+.excldiller {
+  background: #f6f7fb;
+  padding: 71px 59px 76px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 44px; }
+
+.excldiller__left {
+  font-size: 24px;
+  line-height: 1.6;
+  color: black;
+  width: 50%; }
+
+.excldiller__right {
+  width: 50%;
+  padding-left: 89px; }
+
+.excldiller__title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.2;
+  color: black; }
+
+.spn {
+  color: #01b8d9;
+  line-height: 1.2; }
+
 /*page 2*/
 .eqbanner {
   background: url("../img/eqbanner-bg.jpg") no-repeat bottom -70px center;
@@ -322,3 +350,5 @@
   font-size: 30px;
   line-height: 1.6;
   margin-bottom: 10px; }
+
+/*end page 2*/

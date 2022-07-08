@@ -1,0 +1,65 @@
+div.fancy-select {
+  width: 100%;
+}
+div.fancy-select div.trigger,
+div.fancy-select ul.options {
+  width: 100%;
+  min-width: auto;
+  border-radius: 0;
+}
+div.fancy-select div.trigger {
+  background: none;
+  padding: 12px 15px;
+}
+
+div.fancy-select div.trigger:after {
+  right: 15px;
+}
+
+div.fancy-select div.trigger {
+  color: #000;
+}
+
+.completed-slde-dots {
+  position: absolute;
+  left: 28px;
+  bottom: 20px;
+  display: flex;
+  li {      
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10px;
+    height: 10px;
+    border: 2px solid rgb(255, 255, 255);    
+    background: none;
+    margin-left: 6px;
+    margin-right: 6px;
+    cursor: pointer;
+    &:focus {
+      outline: none;      
+    }
+    &:active {
+      outline: none;      
+      background: none;
+    }
+  }
+
+  .slick-active {    
+    border: 2px solid rgb(255, 255, 255);
+    background-color: #ffffff;          
+  }
+}
+
+.nobrd {
+  border: none;
+}
+
+@media (max-width: 640px) {
+  .help-call .measurer-form .btn {
+    margin-top: 0;
+  }
+}

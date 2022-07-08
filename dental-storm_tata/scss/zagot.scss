@@ -1,0 +1,30 @@
+$nr: no-repeat;
+$rb: right bottom;
+$rt: right top;
+$rc: right center;
+$cc: center center;
+$lc: left center;
+$lb: left bottom;
+$bc: bottom center;
+$i: !important;
+$tr: transparent;
+$bord: 1px solid #EAEAEA;
+$black: #000;
+$bcol: #f3ebdc;
+$font2: 'Ubuntu', sans-serif;
+
+
+
+
+
+-body {
+  
+}
+ 
+
+@media (max-width : 1199px) {
+  /**/
+} 
+
+@import "_hides.scss";
+@import "_after-styless.scss";
