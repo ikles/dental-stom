@@ -160,3 +160,48 @@ $font2: 'Ubuntu', sans-serif;
     }
   }
 }
+
+.eqchars__garant-row {
+  margin-top: 14.5px;  
+  align-items: flex-end;
+}
+
+.eqchars__more {
+  
+}
+
+.eqchars__garant {
+  padding-left: 45px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.8;
+    background-image: url('../images/garant-i.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.eqchars__tit {
+    margin-bottom: 10px;    
+  font-weight: 600;
+font-size: 17px;
+line-height: 160%;
+color: #999999;
+
+}
+
+.eqchars__ul {
+  li {
+    color: #999999;
+    padding-left: 21px;
+    &:before {
+      width: 6px;
+      height: 6px;
+      top: 0.5em;
+    }  
+  }
+}
+
+.eqchars__change-city {
+  margin-top: 10px;
+  display: inline-block;
+}
