@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Список страниц</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="MobileOptimized" content="320">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!--link(href="fonts/FontFamilyName/FontName.ttf", as="font", rel="preload", crossorigin="")-->
+    <!--link(rel="mask-icon", href="/safari-pinned-tab.svg", color="#6d9b14")-->
+    <!--meta(name="msapplication-TileColor", content="#6d9b14")-->
+    <!--meta(name="theme-color", content="#6d9b14")-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fix.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <!-- указать путь к шаблону сайта для динамически подключаемых библиотек-->
+<body>
+  <header id="header" class="header">
+      <div class="header__row top">
+        <div class="container">
+          <div class="header__items-container">
+            <div class="header__item header__item--sub-logo">
+              <picture><img src="images/loader.svg" data-src="images/sub-logo.svg" loading="lazy" alt="Группа компаний «Имплант.ру Глобал»" title="Группа компаний «Имплант.ру Глобал»" class="lazyload"/>
+              </picture>
+            </div>
+            <div class="header__item header__item--location"><a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-pin">
+                  <use xlink:href="#pin"></use>
+                </svg>Москва</a></div>
+            <div class="header__item header__item--nav-menu">
+              <ul class="header__nav-menu">
+                <li><a href="">О компании</a></li>
+                <li><a href="">Акции</a></li>
+                <li><a href="">Доставка</a></li>
+                <li><a href="">Оплата</a></li>
+                <li><a href="">Гарантия и возврат</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="header__item header__item--phone"><a href="">+7 (495) 118-7640</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__row bottom">
+        <div class="container">
+          <div class="header__items-container">
+            <div class="header__item header__item--logo"><a href="main.html" class="site-logo">
+                <picture><img src="images/loader.svg" data-src="images/logo.svg" loading="lazy" alt="ООО «Денталстом»" title="ООО «Денталстом»" class="lazyload"/>
+                </picture></a></div>
+            <div class="header__item header__item--catalog"><a href="catalog.html" class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-sort-desc">
+                  <use xlink:href="#sort-desc"></use>
+                </svg>Каталог</a></div>
+            <div id="header-search" data-close-on-outside-click="true" class="header__item header__item--search">
+              <button type="button" data-toggle-activity="#header-search" class="search-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-loupe">
+                  <use xlink:href="#loupe"></use>
+                </svg>
+              </button>
+              <form method="" action="search.html" novalidate="true" autocomplete="off" class="site-form search-form">
+                <div class="container">
+                  <div class="form-group">
+                    <button type="submit" class="form-control-btn btn-search">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-loupe">
+                        <use xlink:href="#loupe"></use>
+                      </svg>
+                    </button>
+                    <button type="button" data-toggle-activity="#header-search" class="form-control-btn btn-close">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-close">
+                        <use xlink:href="#close"></use>
+                      </svg>
+                    </button>
+                    <input type="text" name="" placeholder="Что ищем?" class="form-control">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="header__item header__item--menu-mobile">
+              <button type="button" data-toggle-activity="" class="menu-mobile-toggler">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-hamburger">
+                  <use xlink:href="#hamburger"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="header__item header__item--user-menu">
+              <ul class="user-menu">
+                <li class="user-menu__profile"><a href="" data-modal="#modal-auth">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-user">
+                      <use xlink:href="#user"></use>
+                    </svg>Войти</a></li>
+                <li class="user-menu__favourite"><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-favourite">
+                      <use xlink:href="#favourite"></use>
+                    </svg>Избранное</a></li>
+                <li class="user-menu__basket"><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-basket">
+                      <use xlink:href="#basket"></use>
+                    </svg>Корзина</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="menu-mobile-fixed" class="menu-mobile-fixed desktop-hidden">
+      <div class="container">
+        <ul class="user-menu">
+          <li class="user-menu__phone"><a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-phone">
+                <use xlink:href="#phone"></use>
+              </svg>Позвонить</a></li>
+          <li class="user-menu__catalog"><a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-catalog">
+                <use xlink:href="#catalog"></use>
+              </svg>Каталог</a></li>
+          <li class="user-menu__basket"><a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-basket">
+                <use xlink:href="#basket"></use>
+              </svg>Корзина<span class="icon-counter">123</span></a></li>
+          <li class="user-menu__favourite"><a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-favourite">
+                <use xlink:href="#favourite"></use>
+              </svg>Избранное</a></li>
+          <li class="user-menu__profile"><a href="" data-modal="#modal-auth">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-user">
+                <use xlink:href="#user"></use>
+              </svg>Войти</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="modal-auth" class="modal modal-auth">
+      <button type="button" data-fancybox-close class="modal-close">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-close">
+          <use xlink:href="#close"></use>
+        </svg>
+      </button>
+      <div class="row align-items-height no-gutters">
+        <div class="col-lg-6 desktop-visible">
+          <picture class="modal-auth__image"><img src="images/loader.svg" data-src="images/modal-auth-img.jpg" loading="lazy" alt="" title="" class="lazyload"/>
+          </picture>
+        </div>
+        <div class="col-lg-6">
+          <div class="tab-container">
+            <div id="modal-auth-registration" class="tab-pane active">
+              <form method="" action="" novalidate="true" autocomplete="off" class="site-form js-validate">
+                <div class="section__head">
+                  <h4 class="section__title">Регистрация</h4>
+                  <div class="form-toggler"><a href="#modal-auth-login" data-tab="#modal-auth-login">Войти</a></div>
+                </div>
+                <div class="row sm-gutters">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="ma-1" type="text" name="ma-1" placeholder="Ваше имя*" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="ma-2" type="text" name="ma-2" placeholder="Email*" required data-mask="email" pattern="email" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="ma-3" type="text" name="ma-3" placeholder="Телефон*" required data-mask="phone" pattern="phone" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="ma-4" type="text" name="ma-4" placeholder="Город" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="ma-5" type="password" name="ma-5" placeholder="Пароль*" required class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <input id="ma-6" type="password" name="ma-6" placeholder="Подтвердите пароль*" required class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="buttons-line">
+                    <button type="submit" class="btn">Регистрация</button>
+                  </div>
+                </div>
+                <div class="site-form-agree">
+                  <input id="ma-7" type="checkbox" name="ma-7" value="y" required class="custom-checkbox">
+                  <label for="ma-7" class="custom-checkbox-label">Нажимая кнопку «Регистрация» вы соглашаетесь с <a href="">условиями публичной оферты</a></label>
+                </div>
+              </form>
+            </div>
+            <div id="modal-auth-login" class="tab-pane">
+              <form method="" action="" novalidate="true" autocomplete="off" class="site-form js-validate">
+                <div class="section__head">
+                  <h4 class="section__title">Вход</h4>
+                  <div class="form-toggler">Нет аккаунта? <a href="#modal-auth-registration", data-tab="#modal-auth-registration">Создать</a></div>
+                </div>
+                <div class="row sm-gutters">
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input id="ma-8" type="text" name="ma-8" placeholder="Email*" required data-mask="email" pattern="email" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input id="ma-9" type="password" name="ma-9" placeholder="Пароль*" required class="form-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="buttons-line">
+                    <button type="submit" class="btn">Войти</button>
+                  </div>
+                </div>
+                <div class="form-group"><a href="">Забыли пароль?</a></div>
+                <div class="auth-with-soc">
+                  <div class="auth-with-soc__title"><span>или войдите с помощью</span></div>
+                  <div class="auth-with-soc__list">
+                    <li><a href="https://www.google.com/">
+                        <picture><img src="images/loader.svg" data-src="images/icon-google.png" loading="lazy" alt="" title="" class="lazyload"/>
+                        </picture>Google</a></li>
+                    <li><a href="https://vk.com/">
+                        <picture><img src="images/loader.svg" data-src="images/icon-vk-2.png" loading="lazy" alt="" title="" class="lazyload"/>
+                        </picture>VK</a></li>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <main class="site-content">
+    <div class="page-content catalog-page">
+      <div data-lazy-bg="images/catalog-bg.jpg" class="page-bg-image"></div>
+      <section class="sproduct-wrapper">
+       <div class="container">
+        <ul itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+        <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Главная</span>
+            <meta itemprop="position" content="1"/></a></li>
+            <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Каталог</span>
+                <meta itemprop="position" content="2"/></a></li>
+                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Имплантационные системы</span>
+                    <meta itemprop="position" content="3"/></a></li>
+                    <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Имплант Dentium</span>
+                        <meta itemprop="position" content="4"/></a></li>
+                    </ul>
+        <div class="sproduct__main">
+          <div class="sproduct__top">
+            <div class="sproduct__headings-w">
+              <div class="sproduct__headings">
+                <div class="sproduct__art">MF FX3412</div>
+                <div class="sproduct__title">Имплантат Implantium/Имплантиум, без адаптера</div>
+
+              </div>
+              <div class="sproduct__logos"><img src="img/sproduct-logo-1.png" class="sproduct__logo-img" /><img src="img/sproduct-logo-2.jpg" class="sproduct__logo-img" />
+              </div>
+            </div>
+            <div class="sproduct__info">
+              <div class="sproduct__info-item">Артикул: <span class="sproduct__info-text">MF FX3410</span></div>
+              <div class="sproduct__info-item">Код: <span class="sproduct__info-text">07070</span></div>
+            </div>
+            <div class="scard__row">
+              <div class="scard__left">
+                <div class="scard__thumbs">
+                  <a href="#" class="scard__thumb"><img src="img/scard-min-1.jpg" class="scard__thumb-img" /></a><a href="#" class="scard__thumb"><img src="img/scard-min-2.jpg" class="scard__thumb-img" /></a>
+                  <a href="#" class="scard__thumb"><img src="img/scard-min-3.jpg" class="scard__thumb-img" /></a><a href="#" class="scard__thumb"><img src="img/scard-min-4.jpg" class="scard__thumb-img" /></a>
+                </div>
+                <div class="scard__thumb-big"><img src="img/scard-big.jpg" class="scard__thumb-big-img" /></div>
+              </div>
+              <div class="scard__right">
+                <div class="scard__right-inn">
+                  <div class="scard__chars-w">
+                    <div class="scard__chars-left">
+                      <div class="scard__tbl">
+                        <div class="scard__tbl-row">
+                          <div class="scard__tbl-col">
+                            <div class="dots"><span>Диаметр, мм</span></div>
+                          </div>
+                          <div class="scard__tbl-col"><strong>3.4</strong></div>
+                        </div>
+                        <div class="scard__tbl-row">
+                          <div class="scard__tbl-col">
+                            <div class="dots"><span>Длина, мм</span></div>
+                          </div>
+                          <div class="scard__tbl-col"><strong>10</strong></div>
+                        </div>
+                        <div class="scard__tbl-row">
+                          <div class="scard__tbl-col">
+                            <div class="dots"><span>Материал</span></div>
+                          </div>
+                          <div class="scard__tbl-col"><strong>Титан </strong></div>
+                        </div>
+                      </div>
+                      <a href="#" class="scard__chars-more">Все характеристики</a>
+                    </div>
+                    <div class="scard__chars-right"><div class="scard__garant">Гарантия 24 месяца</div></div>
+                  </div>
+                  <div class="scard__prices-w">
+                    <div class="scard__prices">
+                      <div class="scard__price-w">
+                        <div class="scard__price">24 713 ₽</div>
+                        <div class="scard__old-price">26 749 ₽</div>
+                      </div>
+
+
+                      <div class="buttons-line"><div class="basket-control">
+                        <button type="button" class="basket-control__button remove"></button>
+                        <input type="text" value="1" class="basket-control__input"/>
+                        <button type="button" class="basket-control__button add"></button></div>
+                        <button type="button" class="btn">В корзину</button>
+                      </div>
+
+                      <a href="#" class="scard__quick">Быстрая покупка</a><img src="img/scard-like-i.svg" />
+                      <div class="scard__availability">В наличии</div>
+                    </div>
+                  </div>
+                  <div class="scard__info">
+                    <div class="scard__info-col">
+                      <div class="scard__info-tit">Варианты достаки в “Город”</div>
+                      <ul class="scard__ul">
+                        <li class="scard__li">Самовывоз, с 01.01.2001 — бесплатно</li>
+                        <li class="scard__li">Курьерская доставка, 01.01.2001 — 400 руб.</li>
+                        <li class="scard__li">Пункт выдачи заказов, 01.01.2001 — 500 руб.</li>
+                      </ul>
+                      <a href="#" class="scard__info-change-city">Сменить город </a>
+                    </div>
+                    <div class="scard__info-col">
+                      <div class="scard__info-tit">Оплата</div>
+                      <ul class="scard__ul">
+                        <li class="scard__li">Безналичный расчёт</li>
+                        <li class="scard__li">Оплата картой онлайн</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+
+
+    <div class="eqbanner">
+      <div class="container">
+        <div class="eqbanner__row">
+          <div class="eqbanner__left">
+            <div class="eqbanner__subtit">EVO.15</div>
+            <div class="eqbanner__title">EVO.15 1:5 L с технологией охлаждения</div>
+            <div class="eqbanner__text">
+              В настоящее время Dentium выпускает передовые системы имплантов Implantium и SuperLine, систему мини-имплантов SlimLine, хирургические супраструктуры, ортопедические компоненты, синтетические костные заменители, а также
+              инструменты и оборудование для дентальной имплантации.
+            </div>
+            <div class="eqbanner__prices">
+              <div class="scard__price-w">
+                <div class="scard__price">24 713 ₽</div>
+                <div class="scard__old-price">26 749 ₽</div>
+              </div>
+            </div>
+            <div class="eqbanner__actions">
+
+
+              <div class="buttons-line"><div class="basket-control">
+                <button type="button" class="basket-control__button remove"></button>
+                <input type="text" value="1" class="basket-control__input"/>
+                <button type="button" class="basket-control__button add"></button></div>
+                <button type="button" class="btn">В корзину</button>
+              </div>
+
+              <div class="eqbanner__availability">В наличии</div>
+              <a href="#" class="eqbanner__call-doctor">
+                Вызвать медицинского<br />
+                представителя для демонстрации
+              </a>
+            </div>
+            <div class="eqbanner__info">              
+              <div class="sproduct__info-item">Артикул: <span class="sproduct__info-text">MF FX3410</span></div>
+              <div class="sproduct__info-item">Код: <span class="sproduct__info-text">07070</span></div>            
+            </div>
+
+            <div class="eqbanner__logos"><img src="img/eqbanner-company.png" class="eqbanner__logo" /><img src="img/eqbanner-logo.png" class="eqbanner__logo" /></div>
+          </div>
+          <div class="eqbanner__right"><img src="img/eqbanner-1.png" class="eqbanner__img" /></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</main>
+
+<footer id="footer" class="footer">
+      <div class="footer__row top">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-sm-3">
+              <div class="footer__item footer__item--logo">
+                <div class="site-logo">
+                  <picture><img src="images/loader.svg" data-src="images/logo.svg" loading="lazy" alt="ООО «Денталстом»" title="ООО «Денталстом»" class="lazyload"/>
+                  </picture>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 desktop-hidden">
+              <div class="footer__item footer__item--sub-logo">
+                <picture><img src="images/loader.svg" data-src="images/sub-logo-2.svg" loading="lazy" alt="Группа компаний «Имплант.ру Глобал»" title="Группа компаний «Имплант.ру Глобал»" class="lazyload"/>
+                </picture>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="footer__item footer__item--search">
+                <form method="" action="" novalidate="true" autocomplete="off" class="site-form search-form">
+                  <div class="form-group">
+                    <button type="submit" class="form-control-btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-loupe">
+                        <use xlink:href="#loupe"></use>
+                      </svg>
+                    </button>
+                    <input type="text" name="" placeholder="Что ищем?" class="form-control">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__row middle">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-lg-3 order-lg-2">
+              <div class="footer__item footer__item--menu">
+                    <div class="footer__title">Каталог</div>
+                    <ul class="footer__nav-menu">
+                      <li><a href="">Имплантационные системы</a></li>
+                      <li><a href="">Профилактика и дезинфекция</a></li>
+                      <li><a href="">Стоматологические материалы</a></li>
+                      <li><a href="">Стоматологические инструменты</a></li>
+                      <li><a href="">Стоматологическое оборудование</a></li>
+                      <li><a href="">Товары со скидкой</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2 order-lg-4">
+              <div class="footer__item footer__item--menu">
+                    <div class="footer__title">Покупателям</div>
+                    <ul class="footer__nav-menu">
+                      <li><a href="">Доставка</a></li>
+                      <li><a href="">Оплата</a></li>
+                      <li><a href="">Гарантия и возврат</a></li>
+                      <li><a href="">Для гос. заказчиков</a></li>
+                      <li><a href="">Вопрос-ответ</a></li>
+                      <li><a href="">Гарантийное обслуживание</a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 order-lg-3">
+              <div class="footer__item footer__item--menu">
+                    <div class="footer__title">О нас</div>
+                    <ul class="footer__nav-menu">
+                      <li><a href="">Контактная информация</a></li>
+                      <li><a href="">Реквизиты</a></li>
+                    </ul>
+                    <div class="footer__title"><a href="">Акции и спецпредложения</a></div>
+                    <div class="footer__title"><a href="">Бренды</a></div>
+                    <div class="footer__title"><a href="">Статьи и обзоры</a></div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3 order-lg-1">
+              <div class="footer__item footer__item--sub-logo desktop-visible">
+                <picture><img src="images/loader.svg" data-src="images/sub-logo.svg" loading="lazy" alt="Группа компаний «Имплант.ру Глобал»" title="Группа компаний «Имплант.ру Глобал»" class="lazyload"/>
+                </picture>
+              </div>
+              <div class="footer__item footer__item--contacts">
+                <div class="footer__title">Контакты</div>+7 (495) 118 76 40<br>info@dn-stom.ru
+              </div>
+              <div class="footer__item footer__item--soc tablet-hidden">
+                    <ul class="soc-list">
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-vk.png" loading="lazy" alt="vk" title="vk" class="lazyload"/>
+                          </picture></a></li>
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-yt.png" loading="lazy" alt="yt" title="yt" class="lazyload"/>
+                          </picture></a></li>
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-tg.png" loading="lazy" alt="tg" title="tg" class="lazyload"/>
+                          </picture></a></li>
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-wa.png" loading="lazy" alt="wa" title="wa" class="lazyload"/>
+                          </picture></a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 align-self-sm-center tablet-visible">
+              <div class="footer__item footer__item--soc">
+                    <ul class="soc-list">
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-vk.png" loading="lazy" alt="vk" title="vk" class="lazyload"/>
+                          </picture></a></li>
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-yt.png" loading="lazy" alt="yt" title="yt" class="lazyload"/>
+                          </picture></a></li>
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-tg.png" loading="lazy" alt="tg" title="tg" class="lazyload"/>
+                          </picture></a></li>
+                      <li><a href="" target="_blank">
+                          <picture class="icon-logo"><img src="images/loader.svg" data-src="images/icon-wa.png" loading="lazy" alt="wa" title="wa" class="lazyload"/>
+                          </picture></a></li>
+                    </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-1 align-self-sm-center order-lg-5 mobile-hidden">
+              <div class="footer__item footer__item--cards">
+                    <ul class="cards-list">
+                      <li>
+                        <picture><img src="images/loader.svg" data-src="images/icon-visa.png" loading="lazy" alt="visa" title="visa" class="lazyload"/>
+                        </picture>
+                      </li>
+                      <li>
+                        <picture><img src="images/loader.svg" data-src="images/icon-mastercard.png" loading="lazy" alt="mastercard" title="mastercard" class="lazyload"/>
+                        </picture>
+                      </li>
+                      <li>
+                        <picture><img src="images/loader.svg" data-src="images/icon-mir.png" loading="lazy" alt="mir" title="mir" class="lazyload"/>
+                        </picture>
+                      </li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__row bottom">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-sm-auto col-lg-3">
+              <div class="footer__item footer__item--copyright">© ООО «Денталстом», 2022</div>
+            </div>
+            <div class="col-sm-auto col-lg-3">
+              <div class="footer__item footer__item--policy"><a href="" class="link-gray">Политика конфиденциальности</a></div>
+            </div>
+            <div class="col-sm-auto col-lg-3">
+              <div class="footer__item footer__item--map"><a href="" class="link-gray">Карта сайта</a></div>
+            </div>
+            <div class="col-sm-auto col-lg-3">
+              <div class="footer__item footer__item--developer"><a href="https://indexis.ru/" class="link-black">Разработано в Indexis</a></div>
+            </div>
+            <div class="col-12 mobile-visible">
+              <div class="footer__item footer__item--cards">
+                    <ul class="cards-list">
+                      <li>
+                        <picture><img src="images/loader.svg" data-src="images/icon-visa.png" loading="lazy" alt="visa" title="visa" class="lazyload"/>
+                        </picture>
+                      </li>
+                      <li>
+                        <picture><img src="images/loader.svg" data-src="images/icon-mastercard.png" loading="lazy" alt="mastercard" title="mastercard" class="lazyload"/>
+                        </picture>
+                      </li>
+                      <li>
+                        <picture><img src="images/loader.svg" data-src="images/icon-mir.png" loading="lazy" alt="mir" title="mir" class="lazyload"/>
+                        </picture>
+                      </li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+<script src="libs/jquery/jquery.min.js" type="text/javascript"></script>
+<script src="libs/fancybox/jquery.fancybox.min.js" type="text/javascript"></script>
+<!-- forms-->
+<script src="libs/jquery-validation-form/jquery.validate.min.js" type="text/javascript"></script>
+<script src="libs/jquery-inputmask/jquery.inputmask.min.js" type="text/javascript"></script>
+<script src="libs/selectric/selectric.min.js" type="text/javascript"></script>
+<script src="libs/swiper/swiper.min.js" type="text/javascript"></script>
+<script src="libs/jquery-ui-slider/jquery-ui-slider.min.js" type="text/javascript"></script>
+<script src="libs/jquery-ui-slider/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="js/main.js" type="text/javascript"></script>
+<script src="js/forms.js" type="text/javascript"></script>
+<script src="js/components.js" type="text/javascript"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+<script src="js/common.js"></script>
+
+
+
+</body>
+</html>
+
