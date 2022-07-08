@@ -1,3 +1,31 @@
+.footer {
+  z-index: 1; }
+
+.scard__tbl {
+  margin-bottom: 8px;
+  width: 100%; }
+  .scard__tbl tr {
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .scard__tbl td {
+    font-size: 17px;
+    color: black;
+    padding-bottom: 6px; }
+    .scard__tbl td:first-child {
+      width: 75%; }
+    .scard__tbl td:nth-child(2) {
+      padding-left: 5px; }
+    .scard__tbl td .dots {
+      background: url("../images/dot-td.svg") repeat-x left bottom 6px; }
+      .scard__tbl td .dots span {
+        background: #fff;
+        padding-right: 5px; }
+
 .eqbanner {
   background: url("../images/eqbanner-bg.jpg") no-repeat bottom -70px center;
   background-size: cover; }
@@ -33,6 +61,24 @@
   display: -ms-flexbox;
   display: flex; }
 
+.scard__price-w {
+  width: 100%;
+  margin-bottom: 15px; }
+
+.scard__price {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-right: 18px;
+  font-weight: 600; }
+
+.scard__old-price {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.2;
+  text-decoration: line-through;
+  color: #828282; }
+
 .eqbanner__actions {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -60,7 +106,20 @@
   margin-left: 40px; }
 
 .eqbanner__info {
-  margin-top: 33px; }
+  margin-top: 33px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sproduct__info-item {
+  font-size: 17px;
+  line-height: 1.2;
+  color: #999999;
+  display: inline-block;
+  margin-right: 37px; }
+
+.sproduct__info-text {
+  color: black; }
 
 .eqbanner__logos {
   position: absolute;
@@ -78,10 +137,14 @@
 
 .eqchars {
   padding-top: 66px;
-  padding-bottom: 66px; }
+  padding-bottom: 66px;
+  background: #FFF; }
 
 .eqchars__title {
   font-weight: 600;
   font-size: 30px;
   line-height: 1.6;
   margin-bottom: 10px; }
+
+.eqchars__tbl td:first-child {
+  width: 50%; }

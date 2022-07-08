@@ -15,6 +15,8 @@ $black: #000;
 $bcol: #f3ebdc;
 $font2: 'Ubuntu', sans-serif;
 
+@import "_all.scss";
+
 .eqbanner {
   background: url("../images/eqbanner-bg.jpg") $nr bottom -70px center;  
           background-size: cover;
@@ -53,6 +55,27 @@ $font2: 'Ubuntu', sans-serif;
   display: flex;
 }
 
+.scard__price-w {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.scard__price {
+  display: inline-block;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-right: 18px;
+  font-weight: 600;
+}
+
+.scard__old-price {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 1.2;
+  text-decoration: line-through;
+  color: #828282;
+}
+
 .eqbanner__actions {
   display: flex;
   align-items: center;
@@ -78,6 +101,19 @@ $font2: 'Ubuntu', sans-serif;
 
 .eqbanner__info {
   margin-top: 33px;
+  display: flex;
+}
+
+.sproduct__info-item {
+  font-size: 17px;
+  line-height: 1.2;
+  color: rgb(153, 153, 153);
+  display: inline-block;
+  margin-right: 37px;
+}
+
+.sproduct__info-text {
+  color: rgb(0, 0, 0);
 }
 
 .eqbanner__logos {
@@ -104,6 +140,7 @@ $font2: 'Ubuntu', sans-serif;
 .eqchars {
   padding-top: 66px;
   padding-bottom: 66px;
+  background: #FFF;
 }
 
 .eqchars__inn {
@@ -114,4 +151,12 @@ $font2: 'Ubuntu', sans-serif;
   font-size: 30px;
   line-height: 1.6;
   margin-bottom: 10px;
+}
+
+.eqchars__tbl {
+  td {
+    &:first-child {
+      width: 50%;
+    }
+  }
 }

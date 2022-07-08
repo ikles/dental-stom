@@ -25,9 +25,7 @@ $font2: 'Ubuntu', sans-serif;
   padding: 35px 38px;  
 }
 
-.footer {
-  z-index: 1;
-}
+
 
 .sproduct__top {
 }
@@ -146,36 +144,8 @@ $font2: 'Ubuntu', sans-serif;
   margin-right: 20px;
 }
 
-.scard__tbl {
-  margin-bottom: 8px;
-}
+@import "_all.scss";
 
-.scard__tbl-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6px;
-  justify-content: space-between;
-}
-
-.scard__tbl-col {
-  font-size: 17px;  
-  color: rgb(0, 0, 0);  
-  &:first-child {    
-            flex-grow: 1;
-  }  
-  .dots {
-  background: url('../images/dot-td.svg') repeat-x left bottom 6px;
-  span {
-    background: #fff;
-    padding-right: 5px;
-  }
-}
-
-td:nth-child(2) {
-    padding-left: 2px;
-    text-align: right;
-}
-}
 
 .scard__chars-more {
 }
@@ -438,27 +408,29 @@ td:nth-child(2) {
 }
 
 .schars__title {
-  margin-bottom: 52px;
+  margin-bottom: 33px;
 }
 
 .schars__tbl {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  tr {    
+}
+  td {
+    color: #999;
+  padding-bottom: 7px;
+  strong {
+    color: #000;
+  }
+}
 }
 
-.schars__tbl-row {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
 
-.schars__tbl-col {
-  font-size: 17px;
-  color: rgb(153, 153, 153);
-}
+
+
 
 .schars__text {
   font-size: 17px;
-  line-height: 1.8;    
+  margin-bottom: 0;  
 }
 
 .squestions {  
@@ -469,7 +441,7 @@ td:nth-child(2) {
 .squestions__form-w {
 }
 
-.squestions__title.h2 {
+.squestions__title {
   margin-bottom: 27px;
 }
 
@@ -514,3 +486,76 @@ td:nth-child(2) {
 .squestions__btn {
   margin-top: 30px;
 }
+
+.buysection {
+  background-color: #022391;
+  margin-top: 35px;
+}
+
+.buysection__title {
+  margin-bottom: 33px;
+}
+
+.buysection__form {
+  display: flex;  
+          align-items: center;  
+}
+
+.buysection__price-w { 
+margin-right: 42px; 
+}
+
+.buysection__price {
+  display: inline-block;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-right: 18px;
+    color: #FFF;
+}
+.buysection__old-price {
+  display: inline-block;
+    font-size: 24px;
+    line-height: 1.2;    
+    color: #FFF;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #01B8D9;
+    }  
+}
+
+
+.buysection__icon-btn {
+  color: #FFF;
+  .icon {
+    width: 32px;
+    height: 32px;    
+    margin: 0;
+  }
+}
+
+
+.eqchars {
+}
+
+
+
+.eqchars__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.6;
+  color: rgb(0, 0, 0);
+  margin-bottom: 17px;
+}
+
+.eqchars__row {
+  
+}
+
