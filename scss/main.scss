@@ -71,13 +71,14 @@ $font2: 'Ubuntu', sans-serif;
   display: flex;
   align-items: flex-end;
   margin-left: auto;
-}
-
-.sproduct__logo-img {  
+  picture {  
   &:not(:last-child) {
     margin-right: 40px;
   } 
 }
+}
+
+
 
 .scard__row {
   display: flex;
@@ -256,8 +257,7 @@ $font2: 'Ubuntu', sans-serif;
   line-height: 1.2;
 }
 
-.sadvantages {
-  background-image: url("../images/pin-bg-2.jpg");
+.sadvantages {  
   background-repeat: no-repeat;
   background-position: right center;  
           background-size: cover;
@@ -306,6 +306,18 @@ $font2: 'Ubuntu', sans-serif;
 .bio__left {  
   display: flex;  
           justify-content: flex-end;
+          width: 50%;
+          picture {
+            display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+          }
 }
 
 .bio__img {

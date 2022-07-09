@@ -35,8 +35,13 @@
                   <div class="sproduct__title">Имплантат Implantium/Имплантиум, без адаптера</div>
 
                 </div>
-                <div class="sproduct__logos"><img src="images/sproduct-logo-1.png" class="sproduct__logo-img" /><img
-                  src="images/sproduct-logo-2.jpg" class="sproduct__logo-img" />
+                <div class="sproduct__logos">
+                  <picture>
+                    <img loading="lazy" src="images/loader.svg" data-src="images/sproduct-logo-1.png" class="sproduct__logo-img lazyload" />
+                  </picture>
+                  <picture>
+                    <img loading="lazy" src="images/loader.svg" data-src="images/sproduct-logo-2.jpg" class="sproduct__logo-img lazyload" />
+                  </picture>
                 </div>
               </div>
               <div class="sproduct__info">
@@ -46,318 +51,336 @@
               <div class="scard__row">
                 <div class="scard__left">
                   <div class="scard__thumbs">
-                    <a href="#" class="scard__thumb"><img src="images/scard-min-1.jpg" class="scard__thumb-img" /></a><a
-                    href="#" class="scard__thumb"><img src="images/scard-min-2.jpg" class="scard__thumb-img" /></a>
-                    <a href="#" class="scard__thumb"><img src="images/scard-min-3.jpg" class="scard__thumb-img" /></a><a
-                    href="#" class="scard__thumb"><img src="images/scard-min-4.jpg" class="scard__thumb-img" /></a>
-                  </div>
-                  <div class="scard__thumb-big">
+                    <a href="#" class="scard__thumb">
+                      <picture>
+                      <img loading="lazy" src="images/loader.svg" data-src="images/scard-min-1.jpg" class="scard__thumb-img lazyload" />
+                      </picture>
+                    </a>
+                    <a
+                    href="#" class="scard__thumb">
                     <picture>
-                      <img src="images/loader.svg" data-src="images/scard-big.jpg" class="scard__thumb-big-img lazyload"
-                      loading="lazy" />
+                    <img loading="lazy" src="images/loader.svg" data-src="images/scard-min-2.jpg" class="scard__thumb-img lazyload" />
                     </picture>
-                  </div>
+                  </a>
+                  <a href="#" class="scard__thumb">
+                    <picture>
+                    <img loading="lazy" src="images/loader.svg" data-src="images/scard-min-3.jpg" class="scard__thumb-img lazyload" />
+                    </picture>
+                  </a>
+                  <a href="#" class="scard__thumb">
+                    <picture>
+                    <img loading="lazy" src="images/loader.svg" data-src="images/scard-min-4.jpg" class="scard__thumb-img lazyload" />
+                    </picture>
+                  </a>
                 </div>
-                <div class="scard__right">
-                  <div class="scard__right-inn">
-                    <div class="scard__chars-w">
-                      <div class="scard__chars-left">
-                        <table class="scard__tbl">
-                          <tr>
-                            <td>
-                              <div class="dots"><span>Диаметр, мм</span></div>
-                            </td>
-                            <td><strong>3.4</strong></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="dots"><span>Длина, мм</span></div>
-                            </td>
-                            <td><strong>10</strong></td>
-                          </tr>
-                          <tr>
-                            <td>
-                              <div class="dots"><span>Материал</span></div>
-                            </td>
-                            <td><strong>Титан </strong></td>
-                          </tr>
-                        </table>
-                        <a href="#" class="scard__chars-more">Все характеристики</a>
-                      </div>
-                      <div class="scard__chars-right">
-                        <div class="scard__garant">Гарантия 24 месяца</div>
-                      </div>
+                <div class="scard__thumb-big">
+                  <picture>
+                    <img loading="lazy" src="images/loader.svg" data-src="images/scard-big.jpg" class="scard__thumb-big-img lazyload" />
+                  </picture>
+                </div>
+              </div>
+              <div class="scard__right">
+                <div class="scard__right-inn">
+                  <div class="scard__chars-w">
+                    <div class="scard__chars-left">
+                      <table class="scard__tbl">
+                        <tr>
+                          <td>
+                            <div class="dots"><span>Диаметр, мм</span></div>
+                          </td>
+                          <td><strong>3.4</strong></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="dots"><span>Длина, мм</span></div>
+                          </td>
+                          <td><strong>10</strong></td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="dots"><span>Материал</span></div>
+                          </td>
+                          <td><strong>Титан </strong></td>
+                        </tr>
+                      </table>
+                      <a href="#" class="scard__chars-more">Все характеристики</a>
                     </div>
-                    <div class="scard__prices-w">
-                      <div class="scard__prices">
-                        <div class="scard__price-w">
-                          <div class="scard__price">24 713 ₽</div>
-                          <div class="scard__old-price">26 749 ₽</div>
-                        </div>
-
-
-                        <div class="buttons-line">
-                          <div class="basket-control">
-                            <button type="button" class="basket-control__button remove"></button>
-                            <input type="text" value="1" class="basket-control__input" />
-                            <button type="button" class="basket-control__button add"></button></div>
-                            <button type="button" class="btn">В корзину</button>
-                          </div>
-
-                          <a href="#" class="scard__quick">Быстрая покупка</a>
-
-                          <button type="button" onclick="event.preventDefault(); $(this).toggleClass('in-favourite')" class="catalog-item__icon-btn btn-like">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-favourite">
-                              <use xlink:href="#favourite"></use>
-                            </svg>
-                          </button>
-
-                          <div class="scard__availability">В наличии</div>
-                        </div>
-                      </div>
-                      <div class="scard__info">
-                        <div class="scard__info-col">
-                          <div class="scard__info-tit">Варианты достаки в “Город”</div>
-                          <ul class="scard__ul">
-                            <li class="scard__li">Самовывоз, с 01.01.2001 — бесплатно</li>
-                            <li class="scard__li">Курьерская доставка, 01.01.2001 — 400 руб.</li>
-                            <li class="scard__li">Пункт выдачи заказов, 01.01.2001 — 500 руб.</li>
-                          </ul>
-                          <a href="#" class="scard__info-change-city">Сменить город </a>
-                        </div>
-                        <div class="scard__info-col">
-                          <div class="scard__info-tit">Оплата</div>
-                          <ul class="scard__ul">
-                            <li class="scard__li">Безналичный расчёт</li>
-                            <li class="scard__li">Оплата картой онлайн</li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="scard__chars-right">
+                      <div class="scard__garant">Гарантия 24 месяца</div>
                     </div>
                   </div>
-                </div>
-              </div>
+                  <div class="scard__prices-w">
+                    <div class="scard__prices">
+                      <div class="scard__price-w">
+                        <div class="scard__price">24 713 ₽</div>
+                        <div class="scard__old-price">26 749 ₽</div>
+                      </div>
 
-              <div class="excldiller">
-                <div class="excldiller__left">Имплантаты Dentium - Implantium — это не только оптимальный дизайн,
-                  подходящий для разных клинических случаев, но также превосходная первичная стабильность и упрощенный
-                протокол установки.</div>
-                <div class="excldiller__right">
-                  <h2 class="h3 excldiller__title"><span class="text-color-blue">ДенталСтом</span> — эксклюзивный дилер
-                  Dentium</h2>
-                </div>
-              </div>
-              <!---->
 
-              <div class="sadvantages">
-                <div class="sadvantages__left">
-                  <div class="sadvantages__subtitle">Превосходная первичная <br> стабилизация</div>
-                  <ul class="sadvantages__list">
-                    <li>Максимально плотное соединение имплантата с кортикальной костью.</li>
-                    <li>Максимально плотное соединение им плантата с кортикальной костью. Фиксирующий винт любого
-                    абатмента точно подходит под имплантат Implantium любого размера.</li>
-                    <li>Диаметр тела варьирует от 3.4 мм до 4.8 мм</li>
-                    <li>S.L.A. - поверхность</li>
-                  </ul>
-                </div>
-                <div class="sadvantages__right">
-                  <div class="sadvantages__subtitle">Оптимальная форма <br> резьбы</div>
-                  <ul class="sadvantages__list">
-                    <li>На шейке имплантата нанесена двух шаговая спиральная резьба с внешним контуром.</li>
-                    <li>Превосходная первичная стабилизация и максимально плотная фиксация в кортикальной кости.</li>
-                    <li>Конструкция резьбы имплантата снижает напряжение в кортикальной кости и минимизирует её резорбцию.
-                    </li>
-                  </ul>
+                      <div class="buttons-line">
+                        <div class="basket-control">
+                          <button type="button" class="basket-control__button remove"></button>
+                          <input type="text" value="1" class="basket-control__input" />
+                          <button type="button" class="basket-control__button add"></button></div>
+                          <button type="button" class="btn">В корзину</button>
+                        </div>
+
+                        <a href="#" class="scard__quick">Быстрая покупка</a>
+
+                        <button type="button" onclick="event.preventDefault(); $(this).toggleClass('in-favourite')" class="catalog-item__icon-btn btn-like">
+                          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-favourite">
+                            <use xlink:href="#favourite"></use>
+                          </svg>
+                        </button>
+
+                        <div class="scard__availability">В наличии</div>
+                      </div>
+                    </div>
+                    <div class="scard__info">
+                      <div class="scard__info-col">
+                        <div class="scard__info-tit">Варианты достаки в “Город”</div>
+                        <ul class="scard__ul">
+                          <li class="scard__li">Самовывоз, с 01.01.2001 — бесплатно</li>
+                          <li class="scard__li">Курьерская доставка, 01.01.2001 — 400 руб.</li>
+                          <li class="scard__li">Пункт выдачи заказов, 01.01.2001 — 500 руб.</li>
+                        </ul>
+                        <a href="#" class="scard__info-change-city">Сменить город </a>
+                      </div>
+                      <div class="scard__info-col">
+                        <div class="scard__info-tit">Оплата</div>
+                        <ul class="scard__ul">
+                          <li class="scard__li">Безналичный расчёт</li>
+                          <li class="scard__li">Оплата картой онлайн</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <!---->
             </div>
-            <!--scard-main-->
-          </div>
-          <!--container-->
 
-
-
-        </section>
-
-        <section class="bio">
-          <div class="container">
-            <div class="bio__row">
-              <div class="bio__left">
-                <img src="images/bio.jpg" class="bio__img">
+            <div class="excldiller">
+              <div class="excldiller__left">Имплантаты Dentium - Implantium — это не только оптимальный дизайн,
+                подходящий для разных клинических случаев, но также превосходная первичная стабильность и упрощенный
+              протокол установки.</div>
+              <div class="excldiller__right">
+                <h2 class="h3 excldiller__title"><span class="text-color-blue">ДенталСтом</span> — эксклюзивный дилер
+                Dentium</h2>
               </div>
-              <div class="bio__right">
-                <div class="bio__title h3">Биологическое соединение
-                </div>
-                <ul class="bio__list">
-                  <li>Конические контактные поверхности, наличие шестигранника - гарантия герметичности соединения
-                    имплантата и абатмента любого типа.
+            </div>
+            <!---->
+
+            <div class="sadvantages lazyloaded" style="background-image: url('../images/pin-bg-2.jpg')">
+              <div class="sadvantages__left">
+                <div class="sadvantages__subtitle">Превосходная первичная <br> стабилизация</div>
+                <ul class="sadvantages__list">
+                  <li>Максимально плотное соединение имплантата с кортикальной костью.</li>
+                  <li>Максимально плотное соединение им плантата с кортикальной костью. Фиксирующий винт любого
+                  абатмента точно подходит под имплантат Implantium любого размера.</li>
+                  <li>Диаметр тела варьирует от 3.4 мм до 4.8 мм</li>
+                  <li>S.L.A. - поверхность</li>
+                </ul>
+              </div>
+              <div class="sadvantages__right">
+                <div class="sadvantages__subtitle">Оптимальная форма <br> резьбы</div>
+                <ul class="sadvantages__list">
+                  <li>На шейке имплантата нанесена двух шаговая спиральная резьба с внешним контуром.</li>
+                  <li>Превосходная первичная стабилизация и максимально плотная фиксация в кортикальной кости.</li>
+                  <li>Конструкция резьбы имплантата снижает напряжение в кортикальной кости и минимизирует её резорбцию.
                   </li>
-                  <li>Биологическое соединение распределяет нагрузку на имплантат равномерно, что сводит к минимуму
-                    микродвижения и резорбцию краевой кости.
-                  </li>
-                  <li>Одна ортопедическая платформа. Соединение имплантат-супраструктура универсально.</li>
                 </ul>
               </div>
             </div>
+            <!---->
           </div>
-        </section>
-        <!--bio-->
+          <!--scard-main-->
+        </div>
+        <!--container-->
 
-        <section class="sla">
-          <div class="container">
-            <div class="sla__row row">
-              <div class="sla__left col-6">
-                <div class="sla__title h2">S.L.A. поверхность
-                </div>
+
+
+      </section>
+
+      <section class="bio">
+        <div class="container">
+          <div class="bio__row">
+            <div class="bio__left">
+              <picture>
+              <img loading="lazy" src="images/loader.svg" data-src="images/bio.jpg" class="bio__img">
+            </picture>
+            </div>
+            <div class="bio__right">
+              <div class="bio__title h3">Биологическое соединение
               </div>
-              <div class="sla__right col-6">
-                <div class="row">
-                  <div class="sla__item col-6">
-                    <div class="sla__img-w">
-                      <img src="images/sla-1.jpg" class="sla__img">
-                    </div>
-                    <div class="sla__item-txt">Большая площадь контакта остеобластов с поверхностью имплантата</div>
+              <ul class="bio__list">
+                <li>Конические контактные поверхности, наличие шестигранника - гарантия герметичности соединения
+                  имплантата и абатмента любого типа.
+                </li>
+                <li>Биологическое соединение распределяет нагрузку на имплантат равномерно, что сводит к минимуму
+                  микродвижения и резорбцию краевой кости.
+                </li>
+                <li>Одна ортопедическая платформа. Соединение имплантат-супраструктура универсально.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--bio-->
+
+      <section class="sla">
+        <div class="container">
+          <div class="sla__row row">
+            <div class="sla__left col-6">
+              <div class="sla__title h2">S.L.A. поверхность
+              </div>
+            </div>
+            <div class="sla__right col-6">
+              <div class="row">
+                <div class="sla__item col-6">
+                  <div class="sla__img-w">
+                    <img loading="lazy" src="images/loader.svg" data-src="images/sla-1.jpg" class="sla__img">
                   </div>
-                  <div class="sla__item col-6">
-                    <div class="sla__img-w">
-                      <img src="images/sla-2.jpg" class="sla__img">
-                    </div>
-                    <div class="sla__item-txt">Высокая скорость образования кости на поверхности имплантата.</div>
+                  <div class="sla__item-txt">Большая площадь контакта остеобластов с поверхностью имплантата</div>
+                </div>
+                <div class="sla__item col-6">
+                  <div class="sla__img-w">
+                    <img loading="lazy" src="images/loader.svg" data-src="images/sla-2.jpg" class="sla__img">
                   </div>
+                  <div class="sla__item-txt">Высокая скорость образования кости на поверхности имплантата.</div>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        @@include('var/_fwd.html')
+      @@include('var/_fwd.html')
 
-        <section class="buysection">
-          <div class="container">
-            <div class="h2 text-color-white buysection__title">Имплантиум, без адаптера, Dentium/Дентиум</div>
-            <form class="buysection__form">
-              <div class="buysection__price-w text-color-white">
-                <div class="buysection__price">24 713 ₽</div>
-                <div class="buysection__old-price">26 749 ₽</div>
-              </div>
-              <div class="buttons-line">
-                <div class="basket-control">
-                  <button type="button" class="basket-control__button remove"></button>
-                  <input type="text" value="1" class="basket-control__input" />
-                  <button type="button" class="basket-control__button add"></button></div>
-                  <button type="button" class="btn">В корзину</button>
-                </div>
-                <a href="#" class="scard__quick">Быстрая покупка</a>
-                <button type="button" onclick="event.preventDefault(); $(this).toggleClass('in-favourite')" class="buysection__icon-btn buysection__icon-btn--white btn-like">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-favourite">
-                    <use xlink:href="#favourite"></use>
-                  </svg>
-                </button>
-
-              </form>
+      <section class="buysection">
+        <div class="container">
+          <div class="h2 text-color-white buysection__title">Имплантиум, без адаптера, Dentium/Дентиум</div>
+          <form class="buysection__form">
+            <div class="buysection__price-w text-color-white">
+              <div class="buysection__price">24 713 ₽</div>
+              <div class="buysection__old-price">26 749 ₽</div>
             </div>
-          </section>
-          @@include('var/_all-bottom.html')
-          <section class="catalogs-pdf-slider">
-            <div class="container">
-              <div class="section__head">
-                <h2 class="section__title">Каталоги</h2>
+            <div class="buttons-line">
+              <div class="basket-control">
+                <button type="button" class="basket-control__button remove"></button>
+                <input type="text" value="1" class="basket-control__input" />
+                <button type="button" class="basket-control__button add"></button></div>
+                <button type="button" class="btn">В корзину</button>
+              </div>
+              <a href="#" class="scard__quick">Быстрая покупка</a>
+              <button type="button" onclick="event.preventDefault(); $(this).toggleClass('in-favourite')" class="buysection__icon-btn buysection__icon-btn--white btn-like">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-favourite">
+                  <use xlink:href="#favourite"></use>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+        </section>
+        @@include('var/_all-bottom.html')
+        <section class="catalogs-pdf-slider">
+          <div class="container">
+            <div class="section__head">
+              <h2 class="section__title">Каталоги</h2>
+              <div class="section__nav mobile-hidden">
                 <div class="section__nav mobile-hidden">
-                  <div class="section__nav mobile-hidden">
-                    <div class="swiper-nav">
-                      <button type="button" class="swiper-button prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-arrow">
-                          <use xlink:href="#arrow"></use>
-                        </svg>
-                      </button>
-                      <button type="button" class="swiper-button next">
-                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-arrow">
-                          <use xlink:href="#arrow"></use>
-                        </svg>
-                      </button>
-                    </div>
+                  <div class="swiper-nav">
+                    <button type="button" class="swiper-button prev">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-arrow">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                    </button>
+                    <button type="button" class="swiper-button next">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="icon icon-arrow">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="swiper-container catalogs-pdf-list">
-                <div class="swiper-wrapper align-items-height">
-                  <div class="swiper-slide">
-                    <div class="catalogs__item">
-                      <div class="catalogs__img-w"><img src="images/gal-1.jpg" class="catalogs__img" /></div>
-                      <div class="catalogs__content">
-                        <div class="catalogs__title">Каталог ортодонтической продукции</div>
-                        <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                   <div class="catalogs__item">
-                    <div class="catalogs__img-w"><img src="images/gal-2.jpg" class="catalogs__img" /></div>
-                    <div class="catalogs__content">
-                      <div class="catalogs__title">Каталог ооборудования Saeshin E-cube</div>
-                      <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
-                    </div>
-                  </div>
-                </div>
+            </div>
+            <div class="swiper-container catalogs-pdf-list">
+              <div class="swiper-wrapper align-items-height">
                 <div class="swiper-slide">
                   <div class="catalogs__item">
-                    <div class="catalogs__img-w"><img src="images/gal-3.jpg" class="catalogs__img" /></div>
+                    <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-1.jpg" class="catalogs__img" /></div>
                     <div class="catalogs__content">
-                      <div class="catalogs__title">Каталог стоматологической продукции</div>
+                      <div class="catalogs__title">Каталог ортодонтической продукции</div>
                       <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
                  <div class="catalogs__item">
-                  <div class="catalogs__img-w"><img src="images/gal-4.jpg" /></div>
+                  <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-2.jpg" class="catalogs__img" /></div>
                   <div class="catalogs__content">
-                    <div class="catalogs__title">Каталог ортодонтической продукции</div>
+                    <div class="catalogs__title">Каталог ооборудования Saeshin E-cube</div>
+                    <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="catalogs__item">
+                  <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-3.jpg" class="catalogs__img" /></div>
+                  <div class="catalogs__content">
+                    <div class="catalogs__title">Каталог стоматологической продукции</div>
                     <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
                   </div>
                 </div>
               </div>
               <div class="swiper-slide">
                <div class="catalogs__item">
-                <div class="catalogs__img-w"><img src="images/gal-5.jpg" class="catalogs__img" /></div>
+                <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-4.jpg" /></div>
                 <div class="catalogs__content">
-                  <div class="catalogs__title">Каталог ооборудования Saeshin E-cube</div>
-                  <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="catalogs__item">
-                <div class="catalogs__img-w"><img src="images/gal-6.jpg" class="catalogs__img" /></div>
-                <div class="catalogs__content">
-                  <div class="catalogs__title">Каталог стоматологической продукции</div>
-                  <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="catalogs__item">
-                <div class="catalogs__img-w"><img src="images/gal-3.jpg" class="catalogs__img" /></div>
-                <div class="catalogs__content">
-                  <div class="catalogs__title">Каталог стоматологической продукции</div>
+                  <div class="catalogs__title">Каталог ортодонтической продукции</div>
                   <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
                 </div>
               </div>
             </div>
             <div class="swiper-slide">
              <div class="catalogs__item">
-              <div class="catalogs__img-w"><img src="images/gal-4.jpg" /></div>
+              <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-5.jpg" class="catalogs__img" /></div>
               <div class="catalogs__content">
-                <div class="catalogs__title">Каталог ортодонтической продукции</div>
+                <div class="catalogs__title">Каталог ооборудования Saeshin E-cube</div>
                 <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="catalogs__item">
+              <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-6.jpg" class="catalogs__img" /></div>
+              <div class="catalogs__content">
+                <div class="catalogs__title">Каталог стоматологической продукции</div>
+                <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="catalogs__item">
+              <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-3.jpg" class="catalogs__img" /></div>
+              <div class="catalogs__content">
+                <div class="catalogs__title">Каталог стоматологической продукции</div>
+                <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+           <div class="catalogs__item">
+            <div class="catalogs__img-w"><img loading="lazy" src="images/loader.svg" data-src="images/gal-4.jpg" /></div>
+            <div class="catalogs__content">
+              <div class="catalogs__title">Каталог ортодонтической продукции</div>
+              <a href="#" class="catalogs__file-link">PDF, 2.3 Мб</a>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-    @@include('var/_footer.html')
-    @@include('var/_scripts.html')
-  </body>
-  </html>
+      </div>
+    </section>
+  </main>
+  @@include('var/_footer.html')
+  @@include('var/_scripts.html')
+</body>
+</html>
