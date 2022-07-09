@@ -28,3 +28,178 @@ td {
 }
 }
 }
+
+
+.fbd {
+  padding-bottom: 51px;
+  background-color: #FFF;
+}
+
+
+
+.fbd__row {
+  
+}
+
+.schars {
+  border-bottom: 1px solid rgb(237, 240, 249);
+  border-top: 1px solid rgb(237, 240, 249);  
+  padding-top: 72px;
+  padding-bottom: 73px; 
+  display: flex;  
+           flex-direction: column; 
+           height: 100%;
+           -webkit-flex-grow: 1;
+                   flex-grow: 1;
+}
+
+.schars__title {
+  margin-bottom: 33px;
+}
+
+.schars__tbl {
+  margin-bottom: 25px;
+  tr {    
+}
+  td {
+    color: #999;
+  padding-bottom: 7px;
+  strong {
+    color: #000;
+  }
+}
+}
+
+
+
+
+
+.schars__text {
+  font-size: 17px;
+  margin-bottom: 0;  
+}
+
+.squestions {  
+  background: rgb(246, 247, 251);
+  padding: 63px 121px 95px 80px;
+}
+
+.squestions__form-w {
+}
+
+.squestions__title {
+  margin-bottom: 27px;
+}
+
+.squestions__subtitle {
+  margin-bottom: 39px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+}
+
+.squestions__form {
+}
+
+.squestions__form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.squestions__input {  
+  background: rgb(255, 255, 255);
+  font-size: 17px;  
+  padding-left: 30px;
+  padding-right: 30px;  
+  &::placholder {  
+  color: rgb(153, 153, 153);
+  }  
+}
+
+.squestions__textarea {
+  width: 100%;
+  background-color: #FFF;
+  height: 120px;
+  font-size: 17px;
+  padding: 30px;
+  &::placholder {  
+  color: rgb(153, 153, 153);
+  }  
+}
+
+.squestions__btn {
+  margin-top: 30px;
+}
+
+.buysection {
+  background-color: #022391;
+  margin-top: 35px;
+}
+
+.buysection__title {
+  margin-bottom: 33px;
+}
+
+.buysection__form {
+  display: flex;  
+          align-items: center;  
+}
+
+.buysection__price-w { 
+margin-right: 42px; 
+}
+
+.buysection__price {
+  display: inline-block;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-right: 18px;
+    font-weight: 600;
+}
+.buysection__old-price {
+  display: inline-block;
+    font-size: 24px;
+    line-height: 1.2;    
+    
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      transform: translate(0%, -50%);
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: #01B8D9;
+    }  
+}
+
+.buysection__icon-btn--white {
+  color: #FFF;
+}
+
+.buysection__icon-btn--gray {
+  color: #CCD2E3;
+}
+
+.buysection__icon-btn {      
+  .icon {
+    width: 32px;
+    height: 32px;    
+    margin: 0;
+  }
+}
+
+
+.scard__quick {
+  display: inline-block;
+  margin-left: 37px;
+  margin-right: 37px;
+}
+
+._no-bg {
+  background: none;  
+}

@@ -210,6 +210,7 @@ color: #999999;
 .abcompany {  
   padding-top: 104px;
   padding-bottom: 104px;
+  background-color: #f6f7fb;
 }
 
 .abcompany__row {
@@ -225,10 +226,9 @@ color: #999999;
 
 
 .advproduct {
-  padding-bottom: 45px;
+  padding-bottom: 73px;
   background-color: #FFF;
 }
-
 
 
 .advproduct__row {  
@@ -266,4 +266,158 @@ color: #999999;
   font-size: 17px;
   line-height: 1.6;
   color: rgb(0, 0, 0);
+}
+
+
+.eqslider {
+  position: relative;
+  padding: 0;
+  background-color: #FFF;
+  .slick-arrow {
+  position: absolute;
+  z-index: 12;  
+  width: 42px;
+  height: 25px;
+  border: none;
+  background: none;
+  font-size: 0;
+  background: url("../images/arr-l-sl.svg") $nr center;
+  top: 50%;
+  opacity: 0.8;  
+          transition: 0.5s;
+  &:hover {
+      opacity: 1;
+    }  
+  li {
+    button {
+      padding: 0;        
+      border: none;
+    }
+  }
+}
+
+.slick-prev {
+  left: 72px;  
+}
+
+.slick-next {
+  right: 72px;  
+  transform: rotate(180deg);
+}
+  
+  
+    .slick-dots {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    display: flex;    
+    justify-content: center;
+    z-index: 12;
+    li {
+      font-size: 0;
+      background: none;
+      padding: 0;
+       background: #FFFFFF;
+  display: block;
+  width: 6px;
+  height: 6px;  
+    cursor: pointer;
+    margin: 0 7px;
+  &.slick-active {
+    background: rgb(1, 184, 217);
+  }
+      &:before {
+      display: none;
+      }  
+      button {
+        padding: 0;
+        font-size: 0;
+        outline: none;
+        border: none;
+      }
+    }
+  }
+
+}
+
+.eqslider__img {
+  
+}
+
+.eqslider__actions {
+  bottom: 0px;
+  width: 100%;
+  padding-left: 42px;
+  padding-right: 42px;
+  padding-bottom: 60px;
+  position: absolute;
+  left: 0px;
+}
+
+.eqslider__arrows {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 350px;
+}
+
+.eqslider__arrow {
+  background: url('../images/arr-l-sl.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.eqslider__arrow-l {
+  display: block;
+}
+
+.eqslider__arrow-lr {
+  display: block;
+}
+
+.eqslider__dots {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.eqadvantages {
+  background-color: #FFF;
+}
+
+
+.eqadvantages__img-w {
+  
+}
+
+.eqadvantages__img {
+  max-width: 100%;
+}
+
+.eqadvantages__content {
+  display: flex;  
+  flex-wrap: wrap;          
+  justify-content: space-between;
+}
+
+.eqadvantages__item {
+  width: calc(50% - 40px);
+  margin-bottom: 75px;
+}
+
+.eqadvantages__title {
+  font-weight: 700;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.75em;
+}
+
+.eqadvantages__text {
+  font-size: 17px;
+  line-height: 1.6;  
+}
+
+.eqbuysection {
+  margin-top: 40px;
+  background-color: #F6F7FB;
 }
