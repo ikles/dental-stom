@@ -193,8 +193,6 @@ $font2: 'Ubuntu', sans-serif;
   color: #828282;
 }
 
-
-
 .scard__availability {
   display: inline-block;
   margin-left: 36px;
@@ -378,15 +376,6 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 
-
-
-
-
-.eqchars {
-}
-
-
-
 .eqchars__title {
   font-weight: 600;
   font-size: 30px;
@@ -395,7 +384,38 @@ $font2: 'Ubuntu', sans-serif;
   margin-bottom: 17px;
 }
 
-.eqchars__row {
-  
+.catalogs-pdf-slider {
+  padding-top: 86px;
+  padding-bottom: 83px;
+  border-bottom: 2px solid #edf0f9;
+}
+
+
+.catalogs__img-w {
+  margin-bottom: 24px;
+  height: 370px;
+  overflow: hidden;
+}
+
+.catalogs__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.catalogs__content {
+}
+
+.catalogs__title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.4;
+  color: rgb(0, 0, 0);
+  margin-bottom: 9px;
+}
+
+.catalogs__file-link {
+  font-size: 17px;
+  color: rgb(153, 153, 153);
 }
 

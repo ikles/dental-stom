@@ -1,5 +1,5 @@
 .footer {
-  z-index: 1;
+  
 }
 
 .scard__tbl {
@@ -203,3 +203,46 @@ margin-right: 42px;
 ._no-bg {
   background: none;  
 }
+
+.catalog-similary-slider {
+padding-bottom: 120px;  
+margin-bottom: -120px;
+}
+
+
+@media (min-width: 1200px) {
+.catalog-also-slider,
+.catalog-similary-slider {
+  .swiper-container {
+    padding-bottom: 350px;
+    margin-bottom: -350px;
+}
+} 
+}
+
+.catalog-also-slider,
+.catalog-similary-slider {
+  .swiper-wrapper {
+  z-index: 1;
+}
+} 
+
+
+
+.catalog-also-slider {
+  padding-bottom: 0;
+  .section__title {
+  max-width: calc(100% - 220px);
+}
+} 
+
+.catalog-recommended-slider {
+  .section__title {
+  max-width: calc(100% - 220px);
+} 
+}
+
+
+
+
+
