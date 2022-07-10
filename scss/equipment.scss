@@ -122,13 +122,14 @@ $font2: 'Ubuntu', sans-serif;
   right: 0px;
   display: flex;  
           align-items: flex-end;
-}
-
-.eqbanner__logo {  
+          picture {  
   &:not(:last-child) {
     margin-right: 30px;
   }
 }
+}
+
+
 
 .eqbanner__right {
   

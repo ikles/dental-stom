@@ -22,7 +22,8 @@ $font2: 'Ubuntu', sans-serif;
 
 .sproduct__main {
   background: rgb(255, 255, 255);
-  padding: 35px 38px;  
+  padding: 28px 38px;  
+  margin-top: -6px;
 }
 
 .sproduct__top {
@@ -31,7 +32,7 @@ $font2: 'Ubuntu', sans-serif;
 .sproduct__headings-w {
   display: flex;  
   align-items: flex-end;
-  margin-bottom: 13px;
+  margin-bottom: 4px;
 }
 
 .sproduct__headings {
@@ -39,16 +40,15 @@ $font2: 'Ubuntu', sans-serif;
 
 .sproduct__art {
   font-weight: 300;
-  font-size: 39px;
-  
-  color: rgb(49, 49, 49);
-  margin-bottom: 9px;
+  font-size: 39px;  
+  color: rgb(49, 49, 49);  
 }
 
 .sproduct__title {
   font-weight: 800;
   font-size: 38px;  
   color: rgb(49, 49, 49);  
+  margin-top: -8px;
 }
 
 .sproduct__info {
@@ -173,23 +173,24 @@ $font2: 'Ubuntu', sans-serif;
   height: 600px;
   width: 600px;
   border: 2px solid #CCD2E3;
-  display: flex;
-  -webkit-align-items: center;
+  display: flex;  
           align-items: center;
           justify-content: center;
+          .slick-slide {
+    width: 600px;
+  }
 }
 
 .scard__thumb-big-slide {
   height: 600px;
-  
+  width: 600px;
   picture {
     height: 100%;
     display: flex;
-    -webkit-justify-content: center;
-            justify-content: center;
-        -webkit-align-items: center;
-                align-items: center;
+    justify-content: center;        
+    align-items: center;
   }
+  
 }
 
 .scard__thumb-watermark {

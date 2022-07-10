@@ -1,17 +1,38 @@
 jQuery(document).ready(function( $ ) {
 
- $('.swf__slider').slick({
+
+/************************************/
+
+$('.wrapper').prepend('<span class="eye-3"></span>');
+let pg = parseInt(document.location.pathname.match(/\d+/))
+$('body').addClass('active').css('background-image', "url('../img/"+pg+".jpg')");
+$('body:not(.active)').css('background-image', "unset");
+
+$('.eye-3').click(function (e) {
+  e.preventDefault();  
+  $('body').toggleClass('active');
+  let pg = parseInt(document.location.pathname.match(/\d+/));
+  $('body.active').css('background-image', "url('../img/"+pg+".jpg')");
+  $('body:not(.active)').css('background-image', "unset");
+
+});
+
+/************************************/
+
+
+ $('.scard__thumb-big-slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.sdfsfc__slider-nav'
+  asNavFor: '.scard__thumbs'
 });
- $('.sfdsdf__slider-nav').slick({
-  slidesToShow: 3,
+
+ $('.scard__thumbs').slick({
+  slidesToShow: 4,
   slidesToScroll: 1,
-  asNavFor: '.swf__slider',
-  dots: true,
+  asNavFor: '.scard__thumb-big-slider',
+  dots: false,
   centerMode: false,
   focusOnSelect: true,
   vertical: true
@@ -195,6 +216,13 @@ function InitCatalogPdfSlider() {
     });
   }
 }
+
+$('a[href*=\\#]:not([href=\\#])').click(function () {
+  elementClick = $(this).attr("href");
+  destination = $(elementClick).offset().top;
+  $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 0}, 1100);
+  return false;
+});
 
 
 }); //ready
