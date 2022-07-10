@@ -83,7 +83,7 @@ $font2: 'Ubuntu', sans-serif;
 
 .scard__row {
   display: flex;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 
 .scard__left {
@@ -134,7 +134,7 @@ $font2: 'Ubuntu', sans-serif;
   justify-content: center;
   width: 100%;
   border: 2px solid rgb(204, 210, 227);
-  margin-bottom: 30px;
+  margin-bottom: 29px;
   cursor: pointer;
   picture {
     height: 100%;
@@ -211,7 +211,9 @@ $font2: 'Ubuntu', sans-serif;
 
 .scard__right {
   width: 55%;
-  margin-left: 88px;
+  margin-left: 94px;
+  margin-top: -5px;
+  margin-bottom: -5px;
 }
 
 .scard__right-inn {
@@ -226,9 +228,9 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .scard__chars-left {
-  width: 341px;
+  width: 383px;
   flex: 0 0 auto;
-  margin-right: 20px;
+  margin-right: 52px;
 }
 
 @import "_all.scss";
@@ -238,7 +240,7 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .scard__chars-right {
-  margin-left: auto;
+  
 }
 
 .scard__garant {
@@ -249,10 +251,11 @@ $font2: 'Ubuntu', sans-serif;
   background-image: url("../images/garant-i.svg");
   background-repeat: no-repeat;
   background-position: left center;
+  margin-top: -7px;
 }
 
 .scard__prices-w {
-  margin-top: 86px;
+  margin-top: 91px;
 }
 
 .scard__prices {
@@ -261,26 +264,7 @@ $font2: 'Ubuntu', sans-serif;
   align-items: center;
 }
 
-.scard__price-w {
-  width: 100%;
-  margin-bottom: 15px;
-}
 
-.scard__price {
-  display: inline-block;
-  font-size: 40px;
-  line-height: 1.2;
-  margin-right: 18px;
-  font-weight: 600;
-}
-
-.scard__old-price {
-  display: inline-block;
-  font-size: 24px;
-  line-height: 1.2;
-  text-decoration: line-through;
-  color: #828282;
-}
 
 .scard__availability {
   display: inline-block;
@@ -290,9 +274,10 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .scard__info {
-  margin-top: auto;
+  margin-top: auto;  
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2px;
 }
 
 .scard__info-col {
@@ -305,6 +290,15 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .scard__ul {
+  li {
+    padding-left: 19px;
+    margin-bottom: 2px;
+    &:before {
+      width: 6px;
+      height: 6px;
+      top: 0.65em;
+    }  
+  }
 }
 
 .scard__li {
@@ -312,28 +306,26 @@ $font2: 'Ubuntu', sans-serif;
 
 .scard__info-change-city {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 18px;
+  line-height: 1;
 }
 
 .excldiller {
   background: rgb(246, 247, 251);
-  padding: 71px 59px 76px;
-  display: flex;
+  padding: 71px 59px 76px;  
   margin-bottom: 44px;
   margin-top: 80px;
-  margin-bottom: 44px;
+  margin-bottom: 43px;  
 }
 
 .excldiller__left {
   font-size: 24px;
   line-height: 1.6;
-  color: rgb(0, 0, 0);
-  width: 50%;
+  color: rgb(0, 0, 0);  
 }
 
 .excldiller__right {
-  width: 50%;
-  padding-left: 89px;
+
 }
 
 .excldiller__title {      
@@ -349,12 +341,12 @@ $font2: 'Ubuntu', sans-serif;
   background-repeat: no-repeat;
   background-position: right center;  
           background-size: cover;
-  padding: 85px 446px 77px 59px;
-  display: flex;
+  padding: 74px 356px 88px 59px;
+  
 }
 
 .sadvantages__left {
-  width: 50%;
+  padding-right: 44px;
 }
 
 .sadvantages__subtitle {
@@ -362,11 +354,13 @@ $font2: 'Ubuntu', sans-serif;
   font-size: 30px;
   line-height: 1.2;
   color: rgb(0, 0, 0);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .sadvantages__list {
-
+li {
+  margin-bottom: 4px;
+}
 }
 
 .sadvantages__list-item {
@@ -374,8 +368,7 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .sadvantages__right {
-  width: 50%;
-  padding-left: 89px;
+ padding-left: 44px; 
 }
 
 
@@ -383,18 +376,19 @@ $font2: 'Ubuntu', sans-serif;
   background: rgb(246, 247, 251);
   padding-top: 81px;
   padding-bottom: 84px;
+  margin-top: 53px;
 }
 
 
 
 .bio__row {
-  display: flex;
+  
 }
 
 .bio__left {  
-  display: flex;  
-          justify-content: flex-end;
-          width: 50%;
+          display: flex;
+          -webkit-justify-content: flex-start;
+                  justify-content: flex-start;
           picture {
             display: flex;
     -webkit-box-orient: horizontal;
@@ -411,26 +405,26 @@ $font2: 'Ubuntu', sans-serif;
 .bio__img {
 }
 
-.bio__right {
-  width: 50%;
-  padding-left: 89px;
-  padding-top: 32px;
+.bio__right {  
+  padding-top: 27px;
 }
 
 .bio__title {  
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .bio__list {
   li {
     font-size: 24px;
-    padding-left: 19px;
+    padding-left: 25px;
+    line-height: 1.55;
+    margin-bottom: 2px;
   }
 }
 
 .sla {
-  padding-top: 70px;
-  padding-bottom: 94px;
+  padding-top: 76px;
+  padding-bottom: 14px;
   background-color: #FFF;
 }
 
@@ -450,7 +444,7 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .sla__right {
-  
+ padding-top: 7px; 
 }
 
 .sla__item {
@@ -485,14 +479,17 @@ $font2: 'Ubuntu', sans-serif;
 }
 
 .catalogs-pdf-slider {
-  padding-top: 86px;
-  padding-bottom: 83px;
+  padding-top: 68px;
+  padding-bottom: 78px;
   border-bottom: 2px solid #edf0f9;
+  .section__head .section__title {
+    
+  }
 }
 
 
 .catalogs__img-w {
-  margin-bottom: 24px;
+  margin-bottom: 26px;
   height: 370px;
   overflow: hidden;
 }

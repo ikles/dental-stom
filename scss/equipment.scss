@@ -25,7 +25,7 @@ $font2: 'Ubuntu', sans-serif;
 .eqbanner__row {
   position: relative;
   display: flex;
-  padding-top: 69px;
+  padding-top: 17px;
 }
 
 .eqbanner__left {
@@ -34,15 +34,15 @@ $font2: 'Ubuntu', sans-serif;
 
 .eqbanner__subtit {
   font-weight: 300;
-  font-size: 40px;
-  margin-bottom: 9px;
+  font-size: 40px;  
 }
 
 .eqbanner__title {
   font-weight: 800;
   font-size: 40px;
-  margin-top: 0px;
+  margin-top: -2px;
   margin-bottom: 25px;
+  line-height: 1.05;
 }
 
 .eqbanner__text {
@@ -53,34 +53,18 @@ $font2: 'Ubuntu', sans-serif;
 .eqbanner__prices {
   margin-top: 16px;
   display: flex;
+  margin-top: 22px;
+  .scard__price-w {    
+            align-items: flex-end;
+  }
 }
 
-.scard__price-w {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.scard__price {
-  display: inline-block;
-  font-size: 40px;
-  line-height: 1.2;
-  margin-right: 18px;
-  font-weight: 600;
-}
-
-.scard__old-price {
-  display: inline-block;
-  font-size: 24px;
-  line-height: 1.2;
-  text-decoration: line-through;
-  color: #828282;
-}
 
 .eqbanner__actions {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .eqbanner__availability {
@@ -118,7 +102,7 @@ $font2: 'Ubuntu', sans-serif;
 
 .eqbanner__logos {
   position: absolute;
-  top: 0px;
+  top: -38px;
   right: 0px;
   display: flex;  
           align-items: flex-end;
@@ -132,15 +116,16 @@ $font2: 'Ubuntu', sans-serif;
 
 
 .eqbanner__right {
-  
+ padding-top: 15px;
+ padding-left: 24px; 
 }
 
 .eqbanner__img {
 }
 
 .eqchars {
-  padding-top: 66px;
-  padding-bottom: 66px;
+  padding-top: 60px;
+  padding-bottom: 85px;
   background: #FFF;
 }
 
@@ -151,19 +136,20 @@ $font2: 'Ubuntu', sans-serif;
   font-weight: 600;
   font-size: 30px;
   line-height: 1.6;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 }
 
 .eqchars__tbl {
+
   td {
     &:first-child {
-      width: 50%;
+      width: 55%;
     }
   }
 }
 
 .eqchars__garant-row {
-  margin-top: 14.5px;  
+  margin-top: 4.5px;  
   align-items: flex-end;
 }
 
@@ -209,8 +195,8 @@ color: #999999;
 
 
 .abcompany {  
-  padding-top: 104px;
-  padding-bottom: 104px;
+  padding-top: 73px;
+  padding-bottom: 84px;
   background-color: #f6f7fb;
 }
 
@@ -266,7 +252,13 @@ color: #999999;
 .advproduct__text {
   font-size: 17px;
   line-height: 1.6;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);  
+}
+
+@media (min-width : 1200px) {
+.advproduct__text {
+  max-width: calc(100% - 65px);
+}
 }
 
 
@@ -274,6 +266,11 @@ color: #999999;
   position: relative;
   padding: 0;
   background-color: #FFF;
+  .slick-slide {
+    > div {
+      line-height: 1;
+    }
+  }
   .slick-arrow {
   position: absolute;
   z-index: 12;  
@@ -283,7 +280,7 @@ color: #999999;
   background: none;
   font-size: 0;
   background: url("../images/arr-l-sl.svg") $nr center;
-  top: 50%;
+  top: calc(50% - 15px);  
   opacity: 0.8;  
           transition: 0.5s;
   &:hover {
@@ -399,10 +396,11 @@ color: #999999;
   display: flex;  
   flex-wrap: wrap;          
   justify-content: space-between;
+  padding-top: 58px;
 }
 
 .eqadvantages__item {
-  width: calc(50% - 40px);
+  width: calc(50% - 17px);
   margin-bottom: 75px;
 }
 
@@ -416,6 +414,9 @@ color: #999999;
 .eqadvantages__text {
   font-size: 17px;
   line-height: 1.6;  
+  @media (min-width : 1200px) {
+  max-width: calc(100% - 30px);
+  }
 }
 
 .eqbuysection {

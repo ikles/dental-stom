@@ -18,12 +18,14 @@
   @@include('var/_stl.html')
   <link rel="stylesheet" href="css/equipment.css">
   <body>
+    <div class="wrapper">
     @@include('var/_header.html')
     <main class="site-content">
       <div class="page-content equipment-page">
         <div data-lazy-bg="images/catalog-bg.jpg" class="page-bg-image"></div>
         <div class="eqbanner">
           <div class="container">
+            @@include('var/_bread1.html')
             <div class="eqbanner__row">
               <div class="eqbanner__left">
                 <div class="eqbanner__subtit">EVO.15</div>
@@ -140,6 +142,12 @@
                           </td>
                           <td><strong>Швеция</strong></td>
                         </tr>
+                        <tr>
+                          <td>
+                            <div class="dots"><span>Материал</span></div>
+                          </td>
+                          <td><strong>Сталь</strong></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -153,9 +161,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-5 offset-1">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-7">
                     <div class="eqchars__tit">Варианты достаки в “Город”</div>
                     <ul class="eqchars__ul">
                       <li>Самовывоз, с 01.01.2001 — бесплатно</li>
@@ -164,7 +172,7 @@
                     </ul>
                     <a href="#" class="eqchars__change-city">Сменить город </a>
                   </div>
-                  <div class="col-6">
+                  <div class="col-5">
                     <div class="eqchars__tit">Оплата</div>
                     <ul class="eqchars__ul">
                       <li>Безналичный расчёт</li>
@@ -408,5 +416,6 @@
       </main>
       @@include('var/_footer.html')
       @@include('var/_scripts.html')
+    </div>
     </body>
     </html>

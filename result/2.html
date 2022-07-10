@@ -27,6 +27,7 @@
 <!-- указать путь к шаблону сайта для динамически подключаемых библиотек-->
   <link rel="stylesheet" href="css/equipment.css">
   <body>
+    <div class="wrapper">
     <header id="header" class="header">
       <div class="header__row top">
         <div class="container">
@@ -248,6 +249,16 @@
         <div data-lazy-bg="images/catalog-bg.jpg" class="page-bg-image"></div>
         <div class="eqbanner">
           <div class="container">
+                   <ul itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList" class="breadcrumb">
+        <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Главная</span>
+            <meta itemprop="position" content="1"/></a></li>
+            <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Каталог</span>
+                <meta itemprop="position" content="2"/></a></li>
+                <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Имплантационные системы</span>
+                    <meta itemprop="position" content="3"/></a></li>
+                    <li itemprop="itemListElement" itemscope="itemscope" itemtype="http://schema.org/ListItem"><a itemscope="itemscope" itemtype="http://schema.org/Thing" itemprop="item" href=""><span itemprop="name">Имплант Dentium</span>
+                        <meta itemprop="position" content="4"/></a></li>
+                    </ul>
             <div class="eqbanner__row">
               <div class="eqbanner__left">
                 <div class="eqbanner__subtit">EVO.15</div>
@@ -364,6 +375,12 @@
                           </td>
                           <td><strong>Швеция</strong></td>
                         </tr>
+                        <tr>
+                          <td>
+                            <div class="dots"><span>Материал</span></div>
+                          </td>
+                          <td><strong>Сталь</strong></td>
+                        </tr>
                       </tbody>
                     </table>
                   </div>
@@ -377,9 +394,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-6">
+              <div class="col-5 offset-1">
                 <div class="row">
-                  <div class="col-6">
+                  <div class="col-7">
                     <div class="eqchars__tit">Варианты достаки в “Город”</div>
                     <ul class="eqchars__ul">
                       <li>Самовывоз, с 01.01.2001 — бесплатно</li>
@@ -388,7 +405,7 @@
                     </ul>
                     <a href="#" class="eqchars__change-city">Сменить город </a>
                   </div>
-                  <div class="col-6">
+                  <div class="col-5">
                     <div class="eqchars__tit">Оплата</div>
                     <ul class="eqchars__ul">
                       <li>Безналичный расчёт</li>
@@ -563,7 +580,7 @@
         <div class="fbd__row row">
           <div class="col-6">
             <div class="schars">
-              <div class="schars__title h2">
+              <div class="schars__title h3">
                 Технические<br />
                 характеристики
               </div>         
@@ -628,7 +645,7 @@
         <div class="col-6">
           <div class="squestions">
             <div class="squestions__form-w">
-              <div class="squestions__title h2">
+              <div class="squestions__title h3">
                 У вас остались<br />
                 вопросы?
               </div>
@@ -1174,7 +1191,7 @@
   </div>
 </section>
 
-<section class="bg-gray catalog-recommended-slider">
+<section class="bg-gray catalog-recommended-slider catalog-viewed-slider">
   <div class="container">
     <div class="section__head">
       <h2 class="section__title">Вы недавно смотрели</h2>
@@ -1705,5 +1722,6 @@
 
 <script src="js/slick.js"></script>
 <script src="js/common.js"></script>
+    </div>
     </body>
     </html>
