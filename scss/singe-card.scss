@@ -86,9 +86,16 @@ $font2: 'Ubuntu', sans-serif;
   margin-top: 27px;
 }
 
-.scard__left {
-  width: 50.5%;
+.scard__left {  
   display: flex;
+   &--alone {
+     + .scard__right {
+       margin-left: 62px;
+       .scard__prices-w {
+         margin-top: auto;
+       }
+     }
+   }
 }
 
 .scard__thumbs {
@@ -179,6 +186,13 @@ $font2: 'Ubuntu', sans-serif;
           .slick-slide {
     width: 600px;
   }
+  &--alone {
+   width: 480px;
+   height: 480px; 
+   .scard__thumb-big-slide {
+     height: 480px;
+   }
+  }
 }
 
 .scard__thumb-big-slide {
@@ -190,7 +204,9 @@ $font2: 'Ubuntu', sans-serif;
     justify-content: center;        
     align-items: center;
   }
-  
+  img {
+    max-height: 70%;
+  }
 }
 
 .scard__thumb-watermark {

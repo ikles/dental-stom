@@ -539,7 +539,9 @@ body.active {
           justify-content: center; }
 
 .eqadvantages {
-  background-color: #FFF; }
+  background-color: #FFF;
+  padding-bottom: 0;
+  margin-bottom: -12px; }
 
 .eqadvantages__img {
   max-width: 100%; }
@@ -575,4 +577,8 @@ body.active {
 
 .eqbuysection {
   margin-top: 40px;
-  background-color: #F6F7FB; }
+  background-color: #F6F7FB;
+  padding-bottom: 75px; }
+
+.equipment-body .catalog-viewed-slider {
+  padding-bottom: 72px; }
